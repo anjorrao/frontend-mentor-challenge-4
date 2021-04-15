@@ -1,0 +1,172 @@
+/*------------------- Font ----------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+/*------------------ Color ----------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+.card {
+  border-radius: 20px;
+  box-shadow: 4px 17px 26px -1px rgba(0, 0, 0, 0.27);
+  background-image: url("../images/bg-pattern-desktop.svg");
+  background-size: 780px;
+  background-repeat: no-repeat;
+  background-position-x: -431px;
+  background-position-y: -225px;
+}
+
+@media (max-width: 767.98px) {
+  .card {
+    background-image: url("../images/bg-pattern-mobile.svg");
+    background-size: 70%;
+    background-position: top center;
+  }
+}
+
+.card .card-body {
+  padding: 4rem 1rem;
+}
+
+.card .card-body .title {
+  font-size: 2rem;
+  color: #1d1e35;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 767.98px) {
+  .card .card-body .title {
+    text-align: center;
+    padding-top: 50px;
+  }
+}
+
+.accordion-flush .accordion-item {
+  border-color: #e7e7e9;
+}
+
+.accordion-flush .accordion-item:last-child {
+  border-bottom: 1px solid #e7e7e9;
+}
+
+.accordion-flush .accordion-item .accordion-button {
+  color: #4a4b5e;
+  font-size: 0.8rem;
+  padding: 0.8rem 0;
+}
+
+.accordion-flush .accordion-item .accordion-button:hover {
+  color: #f47c57;
+}
+
+.accordion-flush .accordion-item .accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-flush .accordion-item .accordion-button:not(.collapsed) {
+  box-shadow: none;
+  background-color: transparent !important;
+  font-weight: 700;
+}
+
+.accordion-flush .accordion-item .accordion-button:not(.collapsed):after {
+  transform: translateY(-3px) rotate(180deg);
+}
+
+.accordion-flush .accordion-item .accordion-button:after {
+  position: relative;
+  right: 15px;
+  background-image: url("../images/icon-arrow-down.svg");
+  height: 10px;
+  width: 10px;
+  background-size: 10px;
+}
+
+@media (max-width: 767.98px) {
+  .accordion-flush .accordion-item .accordion-button:after {
+    right: 0;
+  }
+}
+
+.accordion-flush .accordion-item .accordion-body {
+  padding: 0 0 0.75rem;
+  color: #787887;
+  font-size: 0.75rem;
+}
+
+.image-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.image-wrapper .woman-image {
+  position: absolute;
+  top: -170px;
+}
+
+@media (min-width: 768px) {
+  .image-wrapper .woman-image {
+    left: -120px;
+    top: -30px;
+    clip-path: inset(0% 0% 0% 103px);
+  }
+}
+
+.image-wrapper .box-icon {
+  position: absolute;
+  bottom: 5%;
+  left: -35%;
+}
+
+@media (max-width: 767.98px) {
+  .image-wrapper .box-icon {
+    display: none;
+  }
+}
+
+/*------------------- Font ----------------------*/
+/*------------------ Color ----------------------*/
+.card-wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 767.98px) {
+  .card-wrapper {
+    padding: 0 15px;
+    margin-top: 50px;
+  }
+}
+
+.card-wrapper .card {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .card-wrapper .card {
+    width: 820px;
+    height: 450px;
+  }
+}
+
+/*------------------- Font ----------------------*/
+/*------------------ Color ----------------------*/
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+  color: #4a4b5e;
+  background: linear-gradient(180deg, #af67e9 0%, #6565e7 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.attribution {
+  color: #1d1e35;
+  text-align: center;
+}
+
+.attribution a {
+  color: #e7e7e9;
+}
+/*# sourceMappingURL=style.css.map */
