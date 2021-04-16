@@ -7,29 +7,29 @@
   border-radius: 20px;
   box-shadow: 4px 17px 26px -1px rgba(0, 0, 0, 0.27);
   background-image: url("../images/bg-pattern-desktop.svg");
-  background-size: 780px;
+  background-size: 850px;
   background-repeat: no-repeat;
-  background-position-x: -431px;
-  background-position-y: -225px;
+  background-position-x: -485px;
+  background-position-y: -236px;
 }
 
 @media (max-width: 767.98px) {
   .card {
     background-image: url("../images/bg-pattern-mobile.svg");
-    background-size: 70%;
+    background-size: 225px;
     background-position: top center;
   }
 }
 
 .card .card-body {
-  padding: 4rem 1rem;
+  padding: 4.5rem 1rem;
 }
 
 .card .card-body .title {
   font-size: 2rem;
   color: #1d1e35;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 @media (max-width: 767.98px) {
@@ -49,7 +49,7 @@
 
 .accordion-flush .accordion-item .accordion-button {
   color: #4a4b5e;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   padding: 0.8rem 0;
 }
 
@@ -93,28 +93,42 @@
 }
 
 .image-wrapper {
+  display: inline-block;
   position: relative;
   height: 100%;
   width: 100%;
 }
 
+@media (min-width: 768px) {
+  .image-wrapper {
+    height: 400px;
+  }
+}
+
 .image-wrapper .woman-image {
   position: absolute;
-  top: -170px;
 }
 
 @media (min-width: 768px) {
   .image-wrapper .woman-image {
     left: -120px;
-    top: -30px;
+    top: -20px;
     clip-path: inset(0% 0% 0% 103px);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .image-wrapper .woman-image {
+    top: -83px;
+    left: 46%;
+    transform: translate(-50%, -50%);
   }
 }
 
 .image-wrapper .box-icon {
   position: absolute;
-  bottom: 5%;
-  left: -35%;
+  left: -140px;
+  bottom: 94px;
 }
 
 @media (max-width: 767.98px) {
@@ -145,8 +159,8 @@
 
 @media (min-width: 768px) {
   .card-wrapper .card {
-    width: 820px;
-    height: 450px;
+    width: 850px;
+    height: 500px;
   }
 }
 
